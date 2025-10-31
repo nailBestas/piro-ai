@@ -1,0 +1,77 @@
+📁 src/piro/ - ANA PAKET
+text
+src/piro/
+├── math/     # 🧮 Matematik temelleri
+├── ml/       # 🤖 Makine Öğrenimi  
+├── nlp/      # 🗣️ Doğal Dil İşleme
+└── utils/    # 🔧 Yardımcı araçlar
+NEDEN?
+
+src/ içine alıyoruz çünkü: Clean Architecture
+
+Paket olarak yüklenebilir: pip install -e .
+
+Diğer projelerde import piro.math şeklinde kullanılabilir
+
+📁 tests/ - TEST MİMARİSİ
+text
+tests/
+├── unit/         # 🔬 Birim testleri
+│   ├── test_math.py
+│   └── test_ml.py
+└── integration/  # 🔗 Entegrasyon testleri
+NEDEN?
+
+Unit test: Her fonksiyonun tek başına testi
+
+Integration: Modüllerin birlikte çalışması testi
+
+Profesyonel yazılım = Test edilebilir yazılım
+
+📁 notebooks/ - KEŞİF & EĞİTİM
+text
+notebooks/
+├── 01_linear_algebra.ipynb
+├── 02_calculus.ipynb
+└── 03_statistics.ipynb
+NEDEN?
+
+Denemeler için güvenli alan
+
+Görselleştirme ve adım adım öğrenme
+
+Production kodu vs Research kodu ayrımı
+
+📁 data/ - VERİ YÖNETİMİ
+text
+data/
+├── raw/           # 📥 Ham veri (değiştirilmez)
+└── processed/     # ⚙️ İşlenmiş veri
+NEDEN?
+
+Raw data: Orijinal, değiştirilmez
+
+Processed: Temizlenmiş, feature'lar eklenmiş
+
+Version control için önemli
+
+📁 docs/ - DOKÜMANTASYON
+text
+docs/
+├── tutorials/     # 📚 Eğitim rehberleri
+└── api/           # 🔌 API dokümantasyonu
+NEDEN?
+
+Kullanıcılar için kolay başlangıç
+
+Geliştiriciler için teknik detaylar
+
+Open source projeler için HAYATİ
+
+🎯 ÖZET: NEDEN BU YAPI?
+Klasör	Amacı	Örnek
+src/	Production kodu	import piro.math
+tests/	Kalite garantisi	pytest tests/
+notebooks/	Araştırma & Öğrenme	Jupyter denemeleri
+data/	Veri yönetimi	CSV, JSON dosyaları
+docs/	Kullanıcı desteği	How-to rehberleri
