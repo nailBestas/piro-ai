@@ -1,0 +1,4 @@
+{
+    "python.defaultInterpreterPath": "/home/piro/miniconda3/envs/piro_ai/bin/python",
+    "python.terminal.activateEnvironment": true
+}
